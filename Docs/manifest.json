@@ -1,0 +1,159 @@
+{
+  "name": "Docs",
+  "route": "",
+  "path": "",
+  "children": [
+    {
+      "name": "Dashboard",
+      "route": "admin",
+      "path": "Docs/Admin.md"
+    },
+    {
+      "name": "Install",
+      "route": "install",
+      "path": "Docs/install/Install.md",
+      "children": [
+        {
+          "name": "windows",
+          "route": "windows",
+          "path": "Docs/install/windows.md"
+        },
+        {
+          "name": "android",
+          "route": "android",
+          "path": "Docs/install/android.md"
+        },
+        {
+          "name": "linux cli",
+          "route": "cli",
+          "path": "Docs/install/linux-cli.md"
+        },
+        {
+          "name": "macOS cli",
+          "route": "macoscli",
+          "path": "Docs/install/macoscli.md"
+        },        
+        {
+          "name": "synology",
+          "route": "synology",
+          "path": "Docs/install/synology.md"
+        },
+        {
+          "name": "ios",
+          "route": "ios",
+          "path": "Docs/install/ios.md"
+        },
+        {
+          "name": "customize supernode",
+          "route": "customize-supernode",
+          "path": "Docs/install/customize-supernode.md"
+        },
+        {
+          "name": "run as a service",
+          "route": "autostart-omniedge",
+          "path": "Docs/install/run-as-a-service.md"
+        }  
+      ]
+    },
+    {
+      "name": "cases",
+      "route": "cases",
+      "path": "Docs/cases/Case.md",
+      "children": [
+        {
+          "name": "Hybrid Cloud",
+          "route": "hybrid-cloud",
+          "path": "Docs/cases/hybrid-cloud.md"
+        },
+        {
+          "name": "RDP",
+          "route": "rdp",
+          "path": "Docs/cases/Remote-connect-windows-without-exposing-public-IP-with-Omniedge.md"
+        },
+        {
+          "name": "VNC",
+          "route": "vnc",
+          "path": "Docs/cases/OmniEdge-VNC.md"
+        },
+        {
+          "name": "Nvidia Jeston",
+          "route": "jeston",
+          "path": "Docs/cases/OmniEdge-with-Nvidia-JETSON-Project.md"
+        },
+        {
+          "name": "Android Control",
+          "route": "android-remote",
+          "path": "Docs/cases/Remote-control-android.md"
+        },
+        {
+          "name": "Lan Messenger",
+          "route": "lan-messenger",
+          "path": "Docs/cases/OmniEdge-Lan-Message.md"
+        },
+        {
+          "name": "LAN Drop",
+          "route": "landrop",
+          "path": "Docs/cases/OmniEdge-Landrop.md"
+        }
+
+      ]
+    },
+    {
+      "name": "Compare",
+      "route": "compare",
+      "path": "Docs/compare/Compare.md",
+      "children": [
+        {
+          "name": "VPN",
+          "route": "vpn-vs-omniedge",
+          "path": "Docs/compare/VPN-vs-OmniEdge.md"
+        },
+        {
+          "name": "ExpressVPN",
+          "route": "expressvpn-vs-omniedge",
+          "path": "Docs/compare/expressvpn-vs-omniedge.md"
+        },
+        {
+          "name": "frp/ngrok",
+          "route": "frp-ngrok-vs-omniedge",
+          "path": "Docs/compare/frp-ngrok-vs-OmniEdge.md"
+        },
+        {
+          "name": "ZeroTier",
+          "route": "zerotier-vs-omniedge",
+          "path": "Docs/compare/zerotier-OmniEdge.md"
+        },
+        {
+          "name": "n2n",
+          "route": "n2n-vs-omniedge",
+          "path": "Docs/compare/n2n-OmniEdge.md"
+        }
+      ]
+    },
+    {
+      "name": "Architecture",
+      "route": "architecture",
+      "path": "Docs/Architecture.md"
+    },
+    {
+      "name": "Performance",
+      "route": "performance",
+      "path": "Docs/Performance.md"
+    },
+    {
+      "name": "Release Notes",
+      "route": "Release-Notes",
+      "path": "Docs/Release-Note.md"
+    },
+    {
+      "name": "Open Source",
+      "route": "Opensource",
+      "path": "Docs/Opensource.md"
+    },
+    {
+      "name": "Others",
+      "route": "Others",
+      "path": "Docs/Others.md"
+    }
+  ]
+}
