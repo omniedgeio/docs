@@ -6,12 +6,21 @@
 
 ## How to contribute docs
 
-1. Clone this repo by `git clone https://github.com/omniedgeio/docs.git`
-2. Create a new branch from the main by `git checkout -b doc/articlename`
-3. Create a markdown file as the format mentioned below in Docs or in the subfolder related
-4. Write your content accordingly, copy images you use to the `Images` folder
-5. Push the branch to the repo by `git add . && git commit -am "doc():add article name" && git push origin doc/articlename`
-6. Create a Pull request from `https://github.com/omniedgeio/docs/pulls`, and waiting for review. 
+1. Clone this repo by 
+```bash
+git clone https://github.com/omniedgeio/docs.git
+```
+3. Create a new branch from the main by
+```bash
+git checkout -b doc/articlename main
+```
+5. Create a markdown file as the format mentioned below in Docs or in the subfolder related
+6. Write your content accordingly, copy images you use to the `Images` folder
+7. Push the branch to the repo by 
+```bash
+git add . && git commit -am "doc():add article name" && git push origin doc/articlename
+```
+10. Create a Pull request from `https://github.com/omniedgeio/docs/pulls`, and waiting for review. 
 
 
 ## The format of the docs
