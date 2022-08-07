@@ -29,10 +29,20 @@
           "path": "Docs/install/linux-cli.md"
         },
         {
-          "name": "macOS cli",
-          "route": "macoscli",
-          "path": "Docs/install/macoscli.md"
-        },        
+          "name": "macOS",
+          "route": "macos",
+          "path": "Docs/install/macos.md"
+        },
+        {
+          "name": "docker",
+          "route": "docker",
+          "path": "Docs/install/docker.md"
+        },
+        {
+          "name": "github action",
+          "route": "github-action",
+          "path": "Docs/install/github-action.md"
+        },
         {
           "name": "synology",
           "route": "synology",
@@ -127,6 +137,53 @@
           "name": "n2n",
           "route": "n2n-vs-omniedge",
           "path": "Docs/compare/n2n-OmniEdge.md"
+        }
+      ]
+    },
+    {
+      "name": "Development",
+      "route": "development",
+      "path": "Docs/development/Build.md",
+      "children": [
+        {
+          "name": "linux",
+          "route": "linux",
+          "path": "Docs/development/linux.md"
+        },
+        {
+          "name": "windows",
+          "route": "windows",
+          "path": "Docs/development/windows.md"
+        },
+        {
+          "name": "android",
+          "route": "android",
+          "path": "Docs/development/android.md"
+        },
+        {
+          "name": "macOS",
+          "route": "macos",
+          "path": "Docs/development/macOS.md"
+        },        
+        {
+          "name": "ios",
+          "route": "ios",
+          "path": "Docs/development/iOS.md"
+        },
+        {
+          "name": "FreeBSD",
+          "route": "freebsd",
+          "path": "Docs/development/freebsd.md"
+        },
+        {
+          "name": "Synology",
+          "route": "synology",
+          "path": "Docs/development/synology.md"
+        },
+        {
+          "name": "Cross Compile",
+          "route": "crosscompile",
+          "path": "Docs/development/cross-compile.md"
         }
       ]
     },

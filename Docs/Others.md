@@ -91,4 +91,4 @@ Right-click each rule and choose Enable Rule.
 
 -----
 
-If you have more questions, feel free to [contact us](mailto:support@OmniEdge.io).
+If you have more questions, feel free to [discuss](https://github.com/omniedgeio/omniedge/discussions).

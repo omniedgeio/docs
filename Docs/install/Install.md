@@ -28,9 +28,11 @@ thumbnail: /assets/OmniEdgeall0.5.png
 - [MacOS Cli](/docs/article/Install/macoscli)
 - [Synology](/docs/article/Install/synology)
 - [iOS](/docs/article/Install/ios)
+- [Docker](/docs/article/Install/docker)
+- [Github Action](/docs/article/Install/github-action)
 - [Setup custom supernode](/docs/article/Install/customize-supernode)
 
 
 -----
 
-If you have more questions, feel free to [contact us](mailto:support@omniedge.io).
+If you have more questions, feel free to [discuss](https://github.com/omniedgeio/omniedge/discussions).

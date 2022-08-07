@@ -3,45 +3,29 @@ title: Installing OmniEdge on Synology
 description: OmniEdge Synology is Compatible with ArmV7 and Arm64V8, connect to private network.
 route: Doc / Install / Synology
 index: 3
-thumbnail: /assets/OmniEdgeall0.5.png
+thumbnail: /assets/download/omniedge-synology-en.png
 ---
 
 # Installing on Synology
 
-OmniEdge Synology is Compatible with ArmV7 and Arm64V8, Last update: Version 0.2.3, April 25, 2022.
+OmniEdge Synology is Compatible with ArmV7 and Arm64V8, Last update: **Version 0.2.3.3, July 15, 2022**.
 
-+ Sign up your account: [Sign up](https://omniedge.io/register)
+[Download from Github](https://github.com/omniedgeio/omniedge-synology/releases)
 
-+ Download and install omniedge synology from: [https://github.com/omniedgeio/omniedge-synology/releases](https://github.com/omniedgeio/omniedge-synology/releases)
-
-+ Login By Password:
-
-``` bash
-omniedge login -u yourname@youremail.com -f your_auth_file_path
-```
-+ Login By Secret-Key, You can generate secret-key on [omniedge web](https://omniedge.io/dashboard)
+1. Sign up your account
+2. Generate **Security-key**, get the **Virtual Network ID** and **IP Range** from [Dashboard](https://omniedge.io/dashboard)
+3. Download and install OmniEdge Synology
+4. Fill **Security-key**, **Network ID** and **IP Range** during the installation wizard
+5. Special for DSM7, run the command in terminal after installation:
 
 ```bash
-omniedge login -s yoursecuritykey -f your_auth_file_path
+sudo sed -i 's/package/root/g' /var/packages/omniedge/conf/privilege
 ```
 
-+ Join Your Network,you can just call omniedge join, it will automatically prompt the available network for you to choose. And you can also add one parameter `-n` to specify the network id manually. And then, enjoy the omniedge network.
+![](/assets/download/omniedge-synology-en.png)
 
-```bash
-sudo omniedge join -f your_auth_file_path
-```
-and select your virtual network or
-
-``` bash
-sudo omniedge join -n 'virtual-network-id'
-```
-
-with a speicified virtual network.
-
-+ Wait a second and a secure VPN will be established
-![omniedge cli ](/assets/download/OmniEdge-CLI-0.2.0.gif)
 
 
 -----
 
-If you have more questions, feel free to [contact us](mailto:support@omniedge.io).
+If you have more questions, feel free to [discuss](https://github.com/omniedgeio/omniedge/discussions).

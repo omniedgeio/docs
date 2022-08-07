@@ -24,4 +24,4 @@ OmniEdge Windows is compatible with Windows 7,10(arm) & Windows Server 2016,2019
 
 ----
 
-If you have more questions, feel free to [contact us](mailto:support@omniedge.io).
+If you have more questions, feel free to [discuss](https://github.com/omniedgeio/omniedge/discussions).

@@ -8,8 +8,9 @@ thumbnail: /assets/OmniEdgeall0.5.png
 
 # Installing on iOS
 
-OmniEdge iOS is still under development and tested in testflight, we will open for public test soon.
+[https://apps.apple.com/us/app/omniedgenew/id1603005893](https://apps.apple.com/us/app/omniedgenew/id1603005893)
+
 
 -----
 
-If you have more questions, feel free to [contact us](mailto:support@omniedge.io).
+If you have more questions, feel free to [discuss](https://github.com/omniedgeio/omniedge/discussions).

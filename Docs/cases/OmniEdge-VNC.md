@@ -36,7 +36,7 @@ Download [TightVNC](https://www.tightvnc.com/download.php), and install it. Tigh
 
 You can refer the Doc: [TightVNC for Windows: Installation and Getting Started (PDF)](https://www.tightvnc.com/doc/win/TightVNC_for_Windows-Installation_and_Getting_Started.pdf) to install and get TightVNC running. 
 
-## Install TightVNC。
+### Install TightVNC。
 
 For Windows 64bit：[tightvnc-2.8.27-gpl-setup-64bit.msi](https://www.tightvnc.com/download/2.8.27/tightvnc-2.8.27-gpl-setup-64bit.msi)
 
@@ -45,7 +45,7 @@ For Windows 32bit: [tightvnc-2.8.27-gpl-setup-32bit.msi](https://www.tightvnc.co
 Double click and follow the instructions to install. 
 
 
-## Run and Setup TightVNC Server。
+### Run and Setup TightVNC Server。
 
 After run TightVNC Server, you can see a tray icon,：
 
@@ -59,6 +59,72 @@ Click Configuration Menu, Set the password and remember
 
 ![](/assets/docs/case-VNC-omniedge-3.png)
 
+## Install TightVNC for Ubuntu 20.04 Server
+
+```bash
+sudo apt update
+# install the Desktop Environment xfce4 if not installed 
+sudo apt install xfce4 xfce4-goodies -y
+sudo apt install tightvncserver -y
+```
+
+Run the `vncserver` command to set a VNC access password, create the initial configuration files, and start a VNC server instance:
+
+```bash
+vncserver
+```
+
+You need setup `password` after for vnc login.
+The app launches a default vnc server instance on port `TCP 5901` which is a display port, and is referred to by VNC as :1. VNC can launch multiple instances on other display ports, with :2 referring to port 5902, :3 referring to 5903, and so on.
+
+You can stop `vncserver` by running `vncserver -kill :1`.
+
+```bash
+vncserver -kill :1
+```
+
+### Run VNC Server as a service
+
+```bash
+sudo vim /etc/systemd/system/vncserver@.service
+```
+
+Paste the below text:
+
+```bash
+#/etc/systemd/system/vncserver@.service
+[Unit]
+Description=Start TightVNC server at startup
+After=syslog.target network.target
+
+[Service]
+Type=forking
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/home/ubuntu
+
+PIDFile=/home/ubuntu/.vnc/%H:%i.pid
+ExecStartPre=-/usr/bin/vncserver -kill :%i > /dev/null 2>&1
+ExecStart=/usr/bin/vncserver -depth 24 -geometry 1280x800 -localhost :%i
+ExecStop=/usr/bin/vncserver -kill :%i
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Save the file, and make the service run by :
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable vncserver@1.service
+vncserver -kill :1
+sudo systemctl start vncserver@1
+sudo systemctl status vncserver@1
+```
+
+The 1 following the @ sign signifies which display number the service should appear over, in this case the default :1. you can run :2 with `sudo systemctl enable vncserver@2.service`.
+
+**The VNC port of ubuntu is `5901` for :1 or `5902` for :2**
 
 ## Installing OmniEdge Windows
 
@@ -85,4 +151,4 @@ You can invite your friend to your virtual network, and remote support and contr
 
 -----
 
-If you have more questions, feel free to [contact us](mailto:support@omniedge.io).
+If you have more questions, feel free to [discuss](https://github.com/omniedgeio/omniedge/discussions).

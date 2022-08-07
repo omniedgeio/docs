@@ -36,7 +36,8 @@ The most attractive to use hybrid cloud is the great ROI, nearly [76% of Compani
 ![](/assets/docs/case-hybrid-cloud-virtual-network.png)
 
 Go to [OmniEdge Dashboard](/dashboard)
-You can create a hybrid cloud Virtual Network by simplifying click **+ Network**, put name of `Hybrid Cloud Network` and IP Range, we strongly recommend you use the Private IPv4 Addresses: 10.0.0.0 – 10.255.255.255, 172.16.0.0 – 172.31.255.255 and 192.168.0.0 – 192.168.255.255. Here we use **100.100.100.0/24**. 
+You can create a hybrid cloud Virtual Network by simplifying click **+ Network**, put name of `Hybrid Cloud Network` and IP Range, you can use the Private IPv4 Addresses: 10.0.0.0 – 10.255.255.255, 172.16.0.0 – 172.31.255.255 and 192.168.0.0 – 192.168.255.255. Or **CGNAT** address space reserved by [https://tools.ietf.org/html/rfc6598](https://tools.ietf.org/html/rfc6598). we recommend use CGNAT which doesn’t conflict with the commonly-used private addresses your network might already use (10.0.0.0/8, 192.168.0.0/16, etc). 
+Here we use **100.100.100.0/24**. 
 
 ### 3. Setup customize supernode for the Hybrid virtual network
 

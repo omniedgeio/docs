@@ -11,7 +11,7 @@ thumbnail: /assets/docs/OmniEdge-VirtualNetwork.png
 You can access the admin dashboard by login in OmniEdge, there are `Virtual Network`, `Devices`, `Security Key`, and `Settings` pages you can manage your service.
 
 ## 1. Virtual Network
-You can create your own Virtual Network for your Team or personal purpose, by simplifying click `+ Network`, put `name` of virtual network and `IP Range`, we strongly recommend you use the [**Private IPv4 Addresses**](https://en.wikipedia.org/wiki/Reserved_IP_addresses): `10.0.0.0 – 10.255.255.255, 172.16.0.0 – 172.31.255.255 and 192.168.0.0 – 192.168.255.255`.
+You can create your own Virtual Network for your Team or personal purpose, by simplifying click `+ Network`, put `name` of virtual network and `IP Range`, You can use the [**Private IPv4 Addresses**](https://en.wikipedia.org/wiki/Reserved_IP_addresses): `10.0.0.0 – 10.255.255.255, 172.16.0.0 – 172.31.255.255 and 192.168.0.0 – 192.168.255.255`, or better use **CGNAT** address `100.64.0.0/10 subnet (from 100.64.0.0 to 100.127.255.255)`  reserved by [RFC6598](https://tools.ietf.org/html/rfc6598) which doesn’t conflict with the commonly-used private addresses your network might already use (10.0.0.0/8, 192.168.0.0/16, etc).
 
 ![](/assets/docs/OmniEdge-VirtualNetwork.png)
 
@@ -25,6 +25,7 @@ A Devices have to be registered before join the virtual network, and it will be 
 ![](/assets/docs/OmniEdge-Devices.png)
 
 ## 4. Subnet Routers
+
 The devices can run as a router, you can manage all the LAN devices connecting to the router device. 
 ![](/assets/docs/OmniEdge-Devices-Subroutes.png)
 
@@ -47,4 +48,4 @@ You can setup your own Supernode server to increase security and speed for your 
 
 -----
 
-If you have more questions, feel free to [contact us](mailto:support@omniedge.io).
+If you have more questions, feel free to [discuss](https://github.com/omniedgeio/omniedge/discussions).

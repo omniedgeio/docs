@@ -157,9 +157,9 @@ with a speicified virtual network.
 
 ## Installing OmniEdge on Android
 
-OmniEdge Android is compatible with Android 6 or later mobile phone or TV. Last update: Version 0.2.2, March 21,2022.
+OmniEdge Android is compatible with Android 6 or later mobile phone or TV. Last update: Version 0.2.3, July 11,2022.
 
-[Download for Android 6 or later](/install/download/0.2.2/omniedge-release-v0.2.2.apk)
+[Download for Android 6 or later](/install/download/0.2.3/omniedge-release-v0.2.3.apk)
 
 + Download OmniEdge APK and install it
 + Run OmniEdge and Sign in with your email address
@@ -171,14 +171,14 @@ OmniEdge Android is compatible with Android 6 or later mobile phone or TV. Last 
 
 Run scrcpy in the termial: 
 ```bash
-$scrcpy --tcpip=100.100.100.2:5555
+$scrcpy --tcpip=10.100.100.2:5555
 ```
 
 Then you will see the following output, and a popup-window will open to show your android device's screen: 
 
 ```bash
 scrcpy 1.22 <https://github.com/Genymobile/scrcpy>
-2022-02-10 17:03:25.249 scrcpy[41700:1349554] INFO: Connected to 100.100.100.2:5555
+2022-02-10 17:03:25.249 scrcpy[41700:1349554] INFO: Connected to 10.100.100.2:5555
 /opt/homebrew/Cellar/scrcpy/1.22_1/share/scrcpy/scrcpy-server: 1 file pushed, 0 skipped. 15.5 MB/s (40955 bytes in 0.003s)
 [server] INFO: Device: OnePlus HD1900 (Android 11)
 2022-02-10 17:03:34.824 scrcpy[41700:1349549] INFO: Renderer: metal
